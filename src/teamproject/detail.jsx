@@ -3,19 +3,17 @@ import './detail.css';
 
 function Main(){
     // 클릭시 스크롤 이동
-    const idRef1 = useRef(null);
-    const idRef2 = useRef(null);
-    const idRef3 = useRef(null);
-    const idRef4 = useRef(null);
+    // const idRef1 = useRef('content1');
+    // const idRef2 = useRef('content2');
+    // const idRef3 = useRef('content3');
+    // const idRef4 = useRef('content4');
 
-    const id = String;
-
-    const onScrollClick = () => {
-        if(id === 'content1') idRef1.current?.scrollIntoView({ behavior: 'smooth' });
-        if(id === 'content2') idRef2.current?.scrollIntoView({ behavior: 'smooth' });
-        if(id === 'content3') idRef3.current?.scrollIntoView({ behavior: 'smooth' });
-        if(id === 'content4') idRef4.current?.scrollIntoView({ behavior: 'smooth' });
-    };
+    // const onScrollClick = (id = String) => {
+    //     if(id === 'content1') idRef1.current?.scrollIntoView({ behavior: 'smooth' });
+    //     if(id === 'content2') idRef2.current?.scrollIntoView({ behavior: 'smooth' });
+    //     if(id === 'content3') idRef3.current?.scrollIntoView({ behavior: 'smooth' });
+    //     if(id === 'content4') idRef4.current?.scrollIntoView({ behavior: 'smooth' });
+    // };
     // 스크롤시 상단 고정
     const [ScrollY, setScrollY] = useState(0);
     const [ScrollActive, setScrollActive] = useState(false);
@@ -54,24 +52,24 @@ function Main(){
             </div> 
             <div className= {ScrollActive ? 'detail_menu fixed' : 'detail_menu'}>
                 <div className='menu_list'>
-                    <div className='menu'><button onClick={onScrollClick('content1')}>강의소개</button></div>
-                    <div className='menu'><button onClick={onScrollClick('content2')}>강사소개</button></div>
-                    <div className='menu'><button onClick={onScrollClick('content3')}>커리큘럼</button></div>
-                    <div className='menu'><button onClick={onScrollClick('content4')}>수강평</button></div>
+                    <div className='menu'><a href="#content1">강의소개</a></div>
+                    <div className='menu'><a href="#content2">강사소개</a></div>
+                    <div className='menu'><a href="#content3">커리큘럼</a></div>
+                    <div className='menu'><a href="#content4">수강평</a></div>
                 </div>
             </div> 
             <div className='detail_content'>
                 <div className='detail_content_main'>
-                    <div id='content1' className='con' ref={idRef1}>
+                    <div id='content1' className='con'>
                         <h1>강의소개</h1>
                     </div>
-                    <div id='content2' className='con' ref={idRef2}>
+                    <div id='content2' className='con'>
                         <h1>강사소개</h1>
                     </div>
-                    <div id='content3' className='con' ref={idRef3}>
+                    <div id='content3' className='con'>
                         <h1>커리큘럼</h1>
                     </div>
-                    <div id='content4' className='con' ref={idRef4}>
+                    <div id='content4' className='con'>
                         <h1>수강평</h1>
                         <div className='review_list'>
                             <div className='review_body'>
