@@ -1,0 +1,250 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    height: auto;
+
+    font-size: 20px;
+    color: #000;
+
+    box-sizing: border-box;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+h1{
+    margin: 0;
+    padding-top: 14%;
+    padding-left: 20px;
+}
+
+.detail_main{
+    width: auto;
+}
+
+/* 상단보기란 */
+.detail_topbanner{
+    margin-top: 50px;
+    height: 500px;
+    background-color: coral;
+}
+
+.detail_top_body{
+    display: flex;
+    width: 50%;
+    height: 100%;
+
+    margin: 0 auto;
+
+    background-color: rgb(255, 151, 234);
+}
+
+/* 강의 이미지 */
+.detail_img{
+    margin: auto;
+
+    border: 1px solid #fff;
+    border-radius: 5%;
+
+    width: 40%;
+    height: 70%;
+
+    background-color: #fff;
+}
+
+/* 강의 설명및 제목 */
+.detail_title{
+    margin: auto;
+
+    width: 50%;
+    height: 60%;
+
+    color: #fff;
+
+    background-color: blue;
+}
+
+#item_title{
+    font-size: 28px;
+}
+
+/* 상세 메뉴[클릭이벤트 추가] */
+.detail_menu{
+    width: 100%;
+    height: 80px;
+}
+
+.menu_list{
+    display: flex;
+
+    width: 48%;
+    height: 100%;
+
+    margin: 0 auto;
+    padding-left: 2%;
+}
+
+.fixed {
+    position:fixed;
+    top: 0;
+
+    background-color: darkcyan;
+}
+/* 메뉴 리스트 */
+.menu{
+    margin-right: 20px;
+}
+
+.menu > button{
+    width: 80px;
+    height: 60px;
+
+    margin: 10px 0;
+
+    background-color: transparent;
+    border: none;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu > button:hover{
+    border-bottom: 1px solid #000;
+}
+
+.menu:last-child{ margin: 0; }
+
+.menu_view{
+    border-bottom: 2px solid #fff;
+}
+
+/* 상세보기[강의소개, 커리큘럼, 수강평]*/
+.detail_content{
+    height: 4320px;
+
+    display: flex;
+
+    background-color: darkorchid;
+}
+
+.detail_content_main{
+    width: 30%;
+    height: 100%;
+    margin-left: auto;
+}
+
+.con{
+    height: 25%;
+}
+
+#content1{
+    background-color: yellow;
+}
+
+#content2{
+    background-color: red;
+}
+
+#content3{
+    background-color: rgb(88, 255, 88);
+}
+
+/* 수강 리뷰 */
+#content4{
+    background-color: blue;
+}
+
+.review_list{
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 80%;
+  margin: 20px 0;
+
+  background-color: aqua;
+}
+
+.review_body{
+  display: inline-block;
+  width: 45%;
+  height: 45%;
+
+  margin: auto;
+
+  background-color: coral;
+}
+
+.review_body > p{
+    font-size: 16px;
+}
+
+.review_change{
+  display: flex;
+  width: 90%;
+
+  margin: 0 auto;
+}
+
+.review_change span{
+  width: 25px;
+  height: 25px;
+
+  margin-right: 10px;
+
+  text-align: center;
+  background-color: chartreuse;
+}
+
+/* 장바구니 */
+.detail_payment{
+    width: 20%;
+    margin: 0 auto 0 0;
+
+    background-color: burlywood;
+}
+
+.pay_body{
+    position: sticky;
+    top: 100px;
+    margin: 28px 34px 20px auto;
+    width: 100%;
+
+    background-color: antiquewhite;
+}
+
+.money{
+    margin-left: 2%;
+    padding-top: 10px;
+    width: 98%;
+}
+
+.backet{
+    margin: 5% 2% 0;
+    border: 1px solid chocolate;
+    border-radius: 5%;
+
+    width: 96%;
+    height: 30px;
+
+    text-align: center;
+    align-items: center;
+    background-color: chocolate;
+}
+
+.backet span{
+    background-color: chocolate;
+}
+
+.sub{
+    padding-bottom: 10px;
+
+    font-size: 14px;
+}
