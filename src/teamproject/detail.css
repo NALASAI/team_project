@@ -100,11 +100,10 @@ h1{
 /* 메뉴 리스트 */
 .menu{
   margin-right: 20px;
-  padding-top: 25px;
   align-items: center;
 }
 
-.menu > a{
+.menu > button{
     width: 80px;
     height: 60px;
 
@@ -117,7 +116,7 @@ h1{
     font-weight: bold;
 }
 
-.menu > a:hover{
+.menu > button:hover{
     border-bottom: 1px solid #000;
 }
 
@@ -146,21 +145,59 @@ h1{
     height: 25%;
 }
 
+.scroll{
+    padding-top: 80px ;
+
+    height: 1000px;
+}
+
+.con > p { 
+    padding-left: 20px;
+    
+    font-weight: bold;
+}
+
+/* 강의 소개 */
+
 #content1{
     background-color: yellow;
 }
+
+/* 커리큘럼 */
 
 #content2{
     background-color: red;
 }
 
-#content3{
-    background-color: rgb(88, 255, 88);
+#content2 > .car_list{
+    width: 95%;
+
+    margin: 0 auto;
+
+    border: 1px solid rgb(250, 86, 86);
+}
+
+.car_title{
+    padding: 5px 0;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    border-bottom: 1px solid rgb(250, 86, 86);
+}
+
+.car_item{
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(250, 86, 86);
+}
+
+.car_item:last-child{
+    border: none;
 }
 
 /* 수강 리뷰 */
-#content4{
-    background-color: blue;
+#content3{
+    background-color: rgb(88, 255, 88);
 }
 
 .review_list{
@@ -190,7 +227,7 @@ h1{
 
 .review_change{
   display: flex;
-  width: 90%;
+  width: 95%;
 
   margin: 0 auto;
 }
@@ -201,8 +238,11 @@ h1{
 
   margin-right: 10px;
 
+  border: 1px solid orange;
+  border-radius: 50%;
+
   text-align: center;
-  background-color: chartreuse;
+  background-color: orange;
 }
 
 /* 장바구니 */
