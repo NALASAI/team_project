@@ -19,6 +19,11 @@ a{
     font-weight: bold;
 }
 
+ul, li{
+    margin: 0;
+    list-style: none;
+}
+
 h1{
     margin: 0;
     padding-top: 14%;
@@ -141,14 +146,14 @@ h1{
     margin-left: auto;
 }
 
-.con{
-    height: 25%;
-}
-
 .scroll{
     padding-top: 80px ;
 
     height: 1000px;
+}
+
+.con{
+    height: 25%;
 }
 
 .con > p { 
@@ -169,81 +174,12 @@ h1{
     background-color: red;
 }
 
-#content2 > .car_list{
-    width: 95%;
-
-    margin: 0 auto;
-
-    border: 1px solid rgb(250, 86, 86);
-}
-
-.car_title{
-    padding: 5px 0;
-
-    font-size: 24px;
-    font-weight: bold;
-
-    border-bottom: 1px solid rgb(250, 86, 86);
-}
-
-.car_item{
-    padding: 5px 0;
-    border-bottom: 1px solid rgb(250, 86, 86);
-}
-
-.car_item:last-child{
-    border: none;
-}
-
 /* 수강 리뷰 */
 #content3{
     background-color: rgb(88, 255, 88);
 }
 
-.review_list{
-  display: flex;
-  flex-wrap: wrap;
 
-  width: 100%;
-  height: 80%;
-  margin: 20px 0;
-
-  background-color: aqua;
-}
-
-.review_body{
-  display: inline-block;
-  width: 45%;
-  height: 45%;
-
-  margin: auto;
-
-  background-color: coral;
-}
-
-.review_body > p{
-    font-size: 16px;
-}
-
-.review_change{
-  display: flex;
-  width: 95%;
-
-  margin: 0 auto;
-}
-
-.review_change span{
-  width: 25px;
-  height: 25px;
-
-  margin-right: 10px;
-
-  border: 1px solid orange;
-  border-radius: 50%;
-
-  text-align: center;
-  background-color: orange;
-}
 
 /* 장바구니 */
 .detail_payment{

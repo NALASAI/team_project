@@ -1,0 +1,69 @@
+.review_list{
+    display: flex;
+    flex-wrap: wrap;
+  
+    width: 100%;
+    height: 80%;
+    margin: 20px 0;
+  
+    background-color: aqua;
+  }
+  
+  .review_body{
+    display: inline-block;
+    width: 45%;
+    height: 45%;
+  
+    margin: auto;
+  
+    background-color: coral;
+  }
+
+  .review_body > h3{
+    margin-left: 10px;
+  }
+  
+  .review_body > p{
+    font-size: 16px;
+  }
+
+  .review_submit{
+    margin-top: 20%;
+    width: 100%;
+  }
+
+  .review_submit > button{
+    margin: 0 10%;
+
+    justify-content: space-between;
+    height: 40px;
+    border: 1px solid black;
+
+    background-color: transparent;
+  }
+
+  .review_submit > button:hover{
+    background-color: cyan;
+  }
+
+
+  /* 보여주는 항목 변경 */
+  .review_change{
+    display: flex;
+    width: 95%;
+  
+    margin: 0 auto;
+  }
+  
+  .review_change span{
+    width: 25px;
+    height: 25px;
+  
+    margin-right: 10px;
+  
+    border: 1px solid orange;
+    border-radius: 50%;
+  
+    text-align: center;
+    background-color: orange;
+  }
