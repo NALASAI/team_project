@@ -4,7 +4,7 @@ import ReviewList from "./content3/ReviewList";
 import './detail.css';
 
 function Main(){
-    // 클릭시 스크롤 이동[ 작동안됨, 임시로 a태그로 해결]    
+    // 클릭시 스크롤 이동
     const idRef1 = useRef(null);
     const idRef2 = useRef(null);
     const idRef3 = useRef(null);
@@ -18,7 +18,7 @@ function Main(){
     const [ScrollY, setScrollY] = useState(0);
     const [ScrollActive, setScrollActive] = useState(false);
     function handleScroll() {
-        if (ScrollY > 629) {
+        if (ScrollY > 631) {
           setScrollY(window.pageYOffset);
           setScrollActive(true);
         } else {
@@ -78,28 +78,24 @@ function Main(){
                         </p>
                         <p>연관강의 링크</p>
                     </div>
-                    <div id='content2' className= {ScrollActive ? 'con scroll' : 'con'} ref={idRef2}>
+                    <div id='content2' className= 'con' ref={idRef2}>
                         <h1>커리큘럼</h1>
                         <Carlist/>
                     </div>
-                    <div id='content3' className= {ScrollActive ? 'con scroll' : 'con'}  ref={idRef3}>
+                    <div id='content3' className= 'con'  ref={idRef3}>
                         <h1>수강평</h1>
                         <ReviewList/>
                     </div>
                 </div>
+                {/* 장바구니 */}
                 <div className='detail_payment'>
                     <div className='pay_body'>
                         <div className='money'>가격[상품별로 따로표기]</div>
-                        <div id='login_backet' className='backet'>
-                            <span><a>장바구니</a></span>
-                        </div>
+                        <button id='login_backet' className='backet'>장바구니</button>
                         <div className='sub'>
                             <ul>
-                                <li>설명1</li>
-                                <li>설명2</li>
-                                <li>설명3</li>
-                                <li>설명4</li>
-                                <li>설명5</li>
+                                <li id="teacher">강사명</li>
+                                <li id="">난이도</li>
                             </ul>
                         </div>
                     </div>

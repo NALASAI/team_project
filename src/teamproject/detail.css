@@ -133,7 +133,7 @@ h1{
 
 /* 상세보기[강의소개, 커리큘럼, 수강평]*/
 .detail_content{
-    height: 4320px;
+    height: 3240px;
 
     display: flex;
 
@@ -153,7 +153,7 @@ h1{
 }
 
 .con{
-    height: 25%;
+    height: 32.5%;
 }
 
 .con > p { 
@@ -174,12 +174,19 @@ h1{
     background-color: red;
 }
 
+#content2 > h1{
+  padding-bottom: 10px;
+}
+
 /* 수강 리뷰 */
 #content3{
     background-color: rgb(88, 255, 88);
 }
 
-
+#content3 > h1{
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
 
 /* 장바구니 */
 .detail_payment{
@@ -199,30 +206,36 @@ h1{
 }
 
 .money{
-    margin-left: 2%;
+    margin: 0 auto;
     padding-top: 10px;
-    width: 98%;
+    width: 90%;
 }
 
 .backet{
-    margin: 5% 2% 0;
-    border: 1px solid chocolate;
-    border-radius: 5%;
+    margin: 5%;
+    border: 1px solid black;
+    border-radius: 10px;
 
-    width: 96%;
-    height: 30px;
+    width: 90%;
+    height: 50px;
+
+    font-size: 24px;
+    font-weight: bold;
 
     text-align: center;
-    align-items: center;
     background-color: chocolate;
 }
 
-.backet span{
-    background-color: chocolate;
+.backet:hover{
+  background-color: coral;
 }
 
 .sub{
     padding-bottom: 10px;
 
     font-size: 14px;
+}
+
+.sub > ul{
+  padding-left: 5%;
 }
