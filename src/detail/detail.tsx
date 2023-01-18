@@ -5,11 +5,11 @@ import './detail.css';
 
 function Main(){
     // 클릭시 스크롤 이동
-    const idRef1 = useRef(null);
-    const idRef2 = useRef(null);
-    const idRef3 = useRef(null);
+    const idRef1 = useRef<HTMLDivElement>(null);
+    const idRef2 = useRef<HTMLDivElement>(null);
+    const idRef3 = useRef<HTMLDivElement>(null);
 
-    const onScrollClick = (id = null) => {
+    const onScrollClick = (id : string) => {
         if(id === 'content1') idRef1.current?.scrollIntoView({ behavior: 'smooth' });
         if(id === 'content2') idRef2.current?.scrollIntoView({ behavior: 'smooth' });
         if(id === 'content3') idRef3.current?.scrollIntoView({ behavior: 'smooth' });

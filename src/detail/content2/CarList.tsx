@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './CarList.css';
 
 function CarList(){
-  // 3개만 있을때 발생, 3개이상 될시 ul에 갯수에따른 useState값과 토글메뉴가 따로 생성되어야 한다.
+    // 3개만 있을때 발생, 3개이상 될시 ul에 갯수에따른 useState값과 토글메뉴가 따로 생성되어야 한다.
     const [isOpen1, setMenu1] = useState(false);  // 메뉴의 초기값을 false로 설정
     const [isOpen2, setMenu2] = useState(false);  // 메뉴의 초기값을 false로 설정
     const [isOpen3, setMenu3] = useState(false);  // 메뉴의 초기값을 false로 설정
@@ -13,7 +13,7 @@ function CarList(){
 
     return(
         <div className="car_list">
-            <ul className="car_title" onClick={() => toggleMenu1()}> 강의 1
+            <ul className="car_title" onClick={() => toggleMenu1()}>강의 1
                 <li className={isOpen1 ? "car_item" : "hide_item"}><a>강의 1-1. AAA</a></li>
                 <li className={isOpen1 ? "car_item" : "hide_item"}><a>강의 1-2. BBB</a></li>    
             </ul>
