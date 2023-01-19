@@ -1,11 +1,10 @@
 import React from 'react';
 import Detail from './detail/detail';
-
 import './App.css';
 
-function App() {
+function App(){
   return (
-    <Detail/>
+      <Detail/>
   );
 }
 

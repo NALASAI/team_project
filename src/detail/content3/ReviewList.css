@@ -1,4 +1,4 @@
-.review_list{
+.review5_list{
   display: flex;
   flex-wrap: wrap;
 
@@ -7,7 +7,7 @@
   margin: auto 0;
 }
 
-.review_main{
+.review5_main{
   display: inline-block;
   width: 45%;
   height: 42.5%;
@@ -15,7 +15,7 @@
   margin: auto;
 }
 
-.reviewTitle{
+.reviewTitle5{
   display: flex;
   width: 90%;
   height: 20%;
@@ -23,7 +23,7 @@
   margin: 0 auto;
 }
 
-.reviewTitle > h3{
+.reviewTitle5 > h3{
   width: 50%
 }
 
@@ -73,7 +73,7 @@
 }
 
 /* 보여주는 항목 변경 */
-.review_change{
+.review5_change{
   display: flex;
   width: 95%;
   height: 80px;
@@ -81,11 +81,11 @@
   margin: 0 auto;
 }
 
-.reviewCollect{
+.reviewCollect5{
   width: 80%;
 }
 
-.reviewCollect > button{
+.reviewCollect5 > button{
   width: 30px;
   height: 30px;
 
@@ -104,7 +104,7 @@
   background-color: #c6d4e3;
 }
 
-.writeReview{
+.writeReview5{
   background-color: antiquewhite;
   border: 1px solid black;
   border-radius: 10px;
@@ -116,7 +116,7 @@
   font-weight: bold;
 }
 
-.writeReview:hover{
+.writeReview5:hover{
   background-color: rgb(255, 233, 233);
 }
 

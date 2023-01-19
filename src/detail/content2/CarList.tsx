@@ -12,18 +12,18 @@ function CarList(){
     const toggleMenu3 = () => { setMenu3(isOpen3 => !isOpen3); } // on,off 개념 boolean
 
     return(
-        <div className="car_list">
-            <ul className="car_title" onClick={() => toggleMenu1()}>강의 1
-                <li className={isOpen1 ? "car_item" : "hide_item"}><a>강의 1-1. AAA</a></li>
-                <li className={isOpen1 ? "car_item" : "hide_item"}><a>강의 1-2. BBB</a></li>    
+        <div className="car5_list">
+            <ul className="car5_title" onClick={() => toggleMenu1()}>강의 1
+                <li className={isOpen1 ? "car5_item" : "hide_item"}><a>강의 1-1. AAA</a></li>
+                <li className={isOpen1 ? "car5_item" : "hide_item"}><a>강의 1-2. BBB</a></li>    
             </ul>
-            <ul className="car_title" onClick={() => toggleMenu2()}> 강의 2
-                <li className={isOpen2 ? "car_item" : "hide_item"}><a>강의 2-1. AAA</a></li>
-                <li className={isOpen2 ? "car_item" : "hide_item"}><a>강의 2-2. BBB</a></li>    
+            <ul className="car5_title" onClick={() => toggleMenu2()}> 강의 2
+                <li className={isOpen2 ? "car5_item" : "hide_item"}><a>강의 2-1. AAA</a></li>
+                <li className={isOpen2 ? "car5_item" : "hide_item"}><a>강의 2-2. BBB</a></li>    
             </ul>
-            <ul className="car_title" onClick={() => toggleMenu3()}>강의 3
-                <li className={isOpen3 ? "car_item" : "hide_item"}><a>강의 3-1. AAA</a></li>
-                <li className={isOpen3 ? "car_item" : "hide_item"}><a>강의 3-2. BBB</a></li>    
+            <ul className="car5_title" onClick={() => toggleMenu3()}>강의 3
+                <li className={isOpen3 ? "car5_item" : "hide_item"}><a>강의 3-1. AAA</a></li>
+                <li className={isOpen3 ? "car5_item" : "hide_item"}><a>강의 3-2. BBB</a></li>    
             </ul>
         </div>
     );

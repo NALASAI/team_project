@@ -1,4 +1,4 @@
-.car_list{
+.car5_list{
     width: 95%;
 
     margin: 0 auto;
@@ -7,7 +7,7 @@
     border: 1px solid white;
 }
 
-.car_title{
+.car5_title{
     padding: 5px 0;
 
     font-size: 24px;
@@ -16,7 +16,7 @@
     border-bottom: 1px solid white;
 }
 
-.car_item{
+.car5_item{
     padding: 5px 0;
     border-top: 1px solid white;
 }
